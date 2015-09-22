@@ -6,6 +6,7 @@ class RomanConverter
 
   def self.to_integer(roman_number, result = 0)
     return result unless roman?(roman_number)
+    return result unless valid?(roman_char)
     mapping.values.each do |roman|
       result = mapping.invert[roman]
     end

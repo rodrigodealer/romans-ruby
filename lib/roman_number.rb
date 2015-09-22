@@ -9,7 +9,7 @@ module RomanNumber
     }
   end
 
-  def roman?(roman_number)
+  def valid?(roman_number)
     !roman_number.nil? && !roman_number.empty?
   end
 end
