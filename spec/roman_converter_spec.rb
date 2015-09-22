@@ -14,7 +14,7 @@ RSpec.describe RomanConverter do
 
   describe 'simple conversion' do
     it 'returns a conversion of a simple roman number' do
-      expect(RomanConverter.to_integer("I")).to eql(1)
+      expect(RomanConverter.to_integer('I')).to eql(1)
     end
 
     xit 'returns a conversion for a two chars roman number but returns 9' do
