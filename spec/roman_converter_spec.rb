@@ -4,7 +4,7 @@ require 'roman_converter'
 RSpec.describe RomanConverter do
   describe 'no conversion' do
     it 'returns zero if no roman number is provided' do
-      expect(RomanConverter.to_integer("")).to eql(0)
+      expect(RomanConverter.to_integer('')).to eql(0)
     end
 
     it 'returns zero if a nil is provided' do
