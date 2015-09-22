@@ -12,6 +12,5 @@ class RomanConverter
       roman_char = roman_char.slice(roman.length, roman_char.length)
       return to_integer(roman_char, result)
     end
-    result
   end
 end
