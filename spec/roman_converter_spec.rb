@@ -6,6 +6,10 @@ RSpec.describe RomanConverter do
     it 'returns zero if no roman number is provided' do
       expect(RomanConverter.to_integer("")).to eql(0)
     end
+
+    it 'returns zero if a nil is provided' do
+      expect(RomanConverter.to_integer(nil)).to eql(0)
+    end
   end
 
   describe 'simple conversion' do
