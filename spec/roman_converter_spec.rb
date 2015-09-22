@@ -3,7 +3,8 @@ require 'roman_converter'
 
 RSpec.describe RomanConverter do
   describe 'no conversion' do
-    xit 'returns zero if no roman number is provided' do
+    it 'returns zero if no roman number is provided' do
+      expect(RomanConverter.to_integer("")).to eql(0)
     end
   end
 
