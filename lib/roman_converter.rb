@@ -4,11 +4,13 @@ require 'roman_number'
 class RomanConverter
   extend RomanNumber
 
-  def self.to_integer(roman_number, result = 0)
-    return result unless roman?(roman_number)
+  def self.to_integer(roman_char, result = 0)
     return result unless valid?(roman_char)
     mapping.values.each do |roman|
-      result = mapping.invert[roman]
+      next unless roman_char.start_with?(roman)
+      result += mapping.invert[roman]
+      roman_char = roman_char.slice(roman.length, roman_char.length)
+      return to_integer(roman_char, result)
     end
     result
   end
