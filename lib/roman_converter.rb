@@ -1,4 +1,4 @@
-require 'roman_number'
+require File.join(File.dirname(__FILE__), "roman_number")
 
 # Roman numbers converter class
 class RomanConverter
