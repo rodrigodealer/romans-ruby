@@ -2,6 +2,11 @@ require 'spec_helper'
 require 'roman_converter'
 
 RSpec.describe RomanConverter do
+  describe 'no conversion' do
+    xit 'returns zero if no roman number is provided' do
+    end
+  end
+
   describe 'simple conversion' do
     xit 'returns a conversion of a simple roman number' do
     end
