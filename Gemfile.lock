@@ -35,9 +35,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  coco
+  coco (= 0.13.0)
   rspec (= 3.3.0)
-  rubocop
+  rubocop (= 0.34.2)
 
 BUNDLED WITH
    1.10.5

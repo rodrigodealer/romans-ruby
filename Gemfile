@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
 
-
 group :test, :development do
   gem 'rspec', '3.3.0', require: 'spec'
-  gem 'coco'
-  gem 'rubocop', require: false
+  gem 'coco', '0.13.0'
+  gem 'rubocop', '0.34.2', require: false
 end
