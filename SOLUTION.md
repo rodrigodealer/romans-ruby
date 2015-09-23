@@ -21,3 +21,15 @@ It also validates that you're running Ruby 1.9+ and validates your code to use 1
 ## Misc
 
 I used Git as repository to make a journal of my code. Every major code change, I commited. So with git log/git show you can follow the code evolution during the time.
+
+## How to run
+
+Please, make sure you have Ruby 2.x version or newer installed and then:
+
+`$ gem install bundler`
+
+`$ bundle install`
+
+And execute the Ruby script:
+
+`$ ruby roman_to_integer.rb`
