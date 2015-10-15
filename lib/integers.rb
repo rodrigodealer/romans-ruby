@@ -18,6 +18,6 @@ module Integers
   end
 
   def valid?(integer)
-    !integer.nil? && integer != 0
+    !integer.nil? && integer != 0  
   end
 end
